@@ -9,6 +9,13 @@
 				background-repeat:no-repeat;
 				background-size:auto;
 			}
+			#og{
+				width:87%;
+				margin-left:0px;
+				margin-right:0px;
+				padding-left:0px;
+				padding-right:0px;
+			}
 			div{
 				background-image:radial-gradient(rgba(0,0,0,.2),rgba(0,0,0,.05));
 				margin:30px;
@@ -40,14 +47,13 @@
 				height:50px;
 			}
 			#gear{
-				top:5px;
+				top:0px;
+				width:2%;
 			}
 			.inline{
-				position:relative;
-				left:1000px;
-				margin-left:20px;
-				display:inline;
-				padding-left:10px;
+				margin:auto;
+				width:50%;
+				margin-bottom:0px;
 			}
 			.panel{
 				height:auto;
@@ -56,6 +62,36 @@
 				float:none;
 				border-radius:0px;
 				background-image:none;
+			}
+			.panel1{
+				height:auto;
+				width:50%;
+				margin:auto;
+				float:right;
+				border-radius:0px;
+				background-image:none;
+			}
+			.switch {
+				position: relative;
+				display: inline-block;
+				width: 60px;
+				height: 34px;
+			}
+			#time{
+				text-align:center;
+			}
+			#temp1{
+				width:20%;
+				margin:auto;
+				margin-right:0px;
+			}
+			#temp2{
+				width:20%;
+				margin:auto;
+				margin-right:0px;
+			}
+			.app :hover{
+				background-image:radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
 			}
 			#img2{
 				margin-top:25px;
@@ -105,6 +141,10 @@
 				margin-left:20px;
 				margin-top:15px;
 			}
+			#groceries{
+				margin-left:20px;
+				margin-top:15px;
+			}
 			input{
 				border-radius:25px;
 				margin:auto;
@@ -126,10 +166,11 @@
 				display:none;
 				margin-left:00px;
 				float:left;
+				margin-top:0px;
 			}
 			#files_back{
 				position:absolute;
-				top:60px;
+				top:30px;
 				left:1230px;
 				z-index:3;
 				width:auto;
@@ -138,10 +179,11 @@
 				display:none;
 				margin-left:00px;
 				float:left;
+				margin-top:0px;
 			}
 			#gp_back{
 				position:absolute;
-				top:60px;
+				top:30px;
 				left:1230px;
 				z-index:3;
 				width:auto;
@@ -150,10 +192,11 @@
 				display:none;
 				margin-left:00px;
 				float:left;
+				margin-top:0px;
 			}
 			#yt_back{
 				position:absolute;
-				top:60px;
+				top:30px;
 				left:1230px;
 				z-index:3;
 				width:auto;
@@ -162,10 +205,11 @@
 				display:none;
 				margin-left:00px;
 				float:left;
+				margin-top:0px;
 			}
 			#notes_back{
 				position:absolute;
-				top:60px;
+				top:30px;
 				left:1230px;
 				z-index:3;
 				width:auto;
@@ -174,10 +218,11 @@
 				display:none;
 				margin-left:00px;
 				float:left;
+				margin-top:0px;
 			}
 			#google_back{
 				position:absolute;
-				top:55px;
+				top:25px;
 				left:1230px;
 				z-index:3;
 				width:auto;
@@ -186,10 +231,11 @@
 				display:none;
 				margin-left:00px;
 				float:left;
+				margin-top:0px;
 			}
 			#weather_back{
 				position:absolute;
-				top:60px;
+				top:30px;
 				left:1230px;
 				z-index:3;
 				width:auto;
@@ -199,10 +245,11 @@
 				margin-left:00px;
 				float:left;
 				background-image:none;
+				margin-top:0px;
 			}
 			#calander_back{
 				position:absolute;
-				top:110px;
+				top:80px;
 				left:250px;
 				z-index:3;
 				width:auto;
@@ -212,10 +259,11 @@
 				margin-left:00px;
 				float:left;
 				background-image:none;
+				margin-top:0px;
 			}
 			#galary_back{
 				position:absolute;
-				top:55px;
+				top:25px;
 				left:1240px;
 				z-index:3;
 				width:auto;
@@ -225,10 +273,11 @@
 				margin-left:00px;
 				float:left;
 				background-image:none;
+				margin-top:0px;
 			}
 			#gmail_back{
 				position:absolute;
-				top:55px;
+				top:25px;
 				left:1240px;
 				z-index:3;
 				width:auto;
@@ -238,10 +287,11 @@
 				margin-left:00px;
 				float:left;
 				background-image:none;
+				margin-top:0px;
 			}
 			#music_back{
 				position:absolute;
-				top:55px;
+				top:25px;
 				left:1240px;
 				z-index:3;
 				width:auto;
@@ -251,42 +301,130 @@
 				margin-left:00px;
 				float:left;
 				background-image:none;
+				margin-top:0px;
 			}
 			#camera_back{
 				position:absolute;
-				top:55px;
+				top:25px;
 				left:1240px;
 				z-index:3;
 				width:auto;
 			}
-			#p11{display:none;}
-			#p12{display:none;}
+			#padd{
+				margin-top:0px;
+				display:none;
+				margin-left:00px;
+				float:left;
+				background-image:none;
+			}
+			#back{
+				position:absolute;
+				top:25px;
+				left:1240px;
+				z-index:3;
+				width:auto;
+			}
+			#p11{
+				display:none;
+			}
+			#p12{
+				display:none;
+			}
+			#p13{
+				display:none;
+			}
+			#grocereis_back{
+				width:auto;
+				margin:auto;
+			}
+			#1 :hover{
+				background-image:radial-gradient(rgba(0,0,0,.1),rgba(0,0,0,.04));
+			}
+			.slider {
+				-webkit-appearance: none;  /* Override default CSS styles */
+				appearance: none;
+				width: 100%; /* Full-width */
+				height: 25px; /* Specified height */
+				background: #d3d3d3; /* Grey background */
+				outline: none; /* Remove outline */
+				opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+				-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+				transition: opacity .2s;
+				transform: translate(-50%, -50%) rotate(270deg);
+				margin-top:50%;
+			}
+			.slider:hover {
+				opacity: 1; /* Fully shown on mouse-over */
+			}
+			.slider::-moz-range-thumb {
+				width: 25px; /* Set a specific slider handle width */
+				height: 25px; /* Slider handle height */
+				background: #04AA6D; /* Green background */
+				cursor: pointer; /* Cursor on hover */
+			}
+			.slider1 {
+				-webkit-appearance: none;  /* Override default CSS styles */
+				appearance: none;
+				width: 100%; /* Full-width */
+				height: 25px; /* Specified height */
+				background: #d3d3d3; /* Grey background */
+				outline: none; /* Remove outline */
+				opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+				-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+				transition: opacity .2s;
+				transform: translate(-50%, -50%) rotate(270deg);
+				margin-top:50%;
+			}
+			.slider1:hover {
+				opacity: 1; /* Fully shown on mouse-over */
+			}
+			.slider1::-moz-range-thumb {
+				width: 25px; /* Set a specific slider handle width */
+				height: 25px; /* Slider handle height */
+				background: #04AA6D; /* Green background */
+				cursor: pointer; /* Cursor on hover */
+			}
+			#onoff{
+				width:auto;
+			}
+			#format{
+				width:auto;
+			}
 		</style>
 	</head>
 	<body>
 	<header>
-		<h1 class="inline">Top: 37* Freezer: 0*	</h1>
 		<h1 id="time" class="inline"></h1>
-		<img src="https://th.bing.com/th/id/R.746d046e0ae95b09c5dde95b31bd78c9?rik=Sjf%2faHI0i6r7bw&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fyio%2f6zB%2fyio6zB76T.png&ehk=VrzOdyMB0YShiwxL25qB4HCQmvrcdgbdOE%2fCHKa1O5Q%3d&risl=&pid=ImgRaw&r=0" height=25px width=25px class="inline" id="gear"/>
 		<hr id="top" />
 	</header>
 		<div class="panel" id="p1">
-			<input type="text" value="" id="" maxlength="30" />
+			<input type="text" value="" id="" maxlength="30" placeholder="Search" />
 		</div>
 		<br />
-		<div class="panel" id="p">
-			<div id="1" class="" onClick="open_gp()"><img src="https://www.patchworkoftips.com/wp-content/uploads/2019/04/Google_Play_Prism.max-2800x2800.png" height=80px width=80px id="ps"/></div>
-			<div id="2" class="" onClick="open_yt()"><img src="https://i1.wp.com/christianexpedition.com/wp-content/uploads/2020/03/yt_icon_rgb.png?ssl=1" height=60px width=90px id="yt"/></div>
-			<div id="3" class="" onClick="open_notes()"><img src="https://lh3.googleusercontent.com/GsNdpuskXyDTlc5jOoT3M425gZVNdl49bAk0TmGDQUmEbs9uTWlDVEqI9varcaUHi43z" height=80px width=80px id="notes"/></div>
-			<div id="4" class="" onClick="open_google()"><img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" height=60px width=100px id="google"/></div>
-			<div id="5" class="" onClick="open_weather()"><img src="https://icons.iconarchive.com/icons/iynque/ios7-style/1024/Weather-icon.png" height=80px width=80px id="weather"/></div>
-			<div id="6" class="" onClick="open_galary()"><img src="https://th.bing.com/th/id/R.b2242d32dc5434a7a2144b2dff9ccb11?rik=Doe5MOtFkP7fpQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpraveen%2fminimal-outline%2f512%2fgallery-icon.png&ehk=ufGGEm8Yn5y27iyvTpd%2fZC8yizpZMoKJf%2b2mMJoK0%2fU%3d&risl=&pid=ImgRaw&r=0" height=80px width=80px id="galary"/></div>
-			<div id="7" class="" onClick="open_calander()"><img src="https://th.bing.com/th/id/R.03c77e11e4a54a89d85d38c55ed28b1c?rik=08m1biBxc1zGDQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpaomedia%2fsmall-n-flat%2f1024%2fcalendar-icon.png&ehk=psUPT1KNt%2fis72UgirsFnoXwWLiTe8hiR%2fxgwOk8ySs%3d&risl=&pid=ImgRaw&r=0" height=80px width=80px id="calander"/></div>
-			<div id="8" class="" onClick="open_gmail()"><img src="https://iconape.com/wp-content/uploads/1/11/gmail-02.png" height=60px width=100px id="email"/></div>
-			<div id="9" class="" onClick="open_music()"><img src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-1.png" height=70px width=70px id="music"/></div>
-			<div id="10" class="" onClick="open_camera()"><img src="https://th.bing.com/th/id/R.d90a006b299492ac099fb038a15c7e55?rik=MbpQJohLOYQCpQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f9i4%2fedX%2f9i4edX7GT.png&ehk=XFTwQUyWNs2AErIJu4V2zfAHUBz12gOgV3IY92SabvE%3d&risl=&pid=ImgRaw&r=0" height=60px width=70px id="camera"/></div>
-			<div id="11" class="" onClick="open_files()"><img src="https://cdn0.iconfinder.com/data/icons/iconico-3/1024/63.png" height=80px width=80px id="files"/></div>
-			<div id="plus" class="" onClick="add()"><img src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-apps_90405.png" height=60px width=60px id="img2"/></div>
+		<div class="panel" id="og">
+			<div class="panel1" id="temp1">
+				<input type="range" min="30" max="50" value="37" class="slider1" id="myRange1">
+				<h2>Fridge:<h2 id="fridge"></h2></h2>
+			</div>
+			<div class="panel1" id="p">
+				<div id="1" class="pad" onClick="open_gp()"><img class="app" src="https://www.patchworkoftips.com/wp-content/uploads/2019/04/Google_Play_Prism.max-2800x2800.png" height=80px width=80px id="ps"/></div>
+				<div id="2" class="pad" onClick="open_yt()"><img class="app" src="https://i1.wp.com/christianexpedition.com/wp-content/uploads/2020/03/yt_icon_rgb.png?ssl=1" height=60px width=90px id="yt"/></div>
+				<div id="3" class="pad" onClick="open_notes()"><img class="app" src="https://lh3.googleusercontent.com/GsNdpuskXyDTlc5jOoT3M425gZVNdl49bAk0TmGDQUmEbs9uTWlDVEqI9varcaUHi43z" height=80px width=80px id="notes"/></div>
+				<div id="4" class="pad" onClick="open_google()"><img class="app" src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" height=60px width=100px id="google"/></div>
+				<div id="5" class="pad" onClick="open_weather()"><img class="app" src="https://icons.iconarchive.com/icons/iynque/ios7-style/1024/Weather-icon.png" height=80px width=80px id="weather"/></div>
+				<div id="6" class="pad" onClick="open_galary()"><img class="app" src="https://th.bing.com/th/id/R.b2242d32dc5434a7a2144b2dff9ccb11?rik=Doe5MOtFkP7fpQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpraveen%2fminimal-outline%2f512%2fgallery-icon.png&ehk=ufGGEm8Yn5y27iyvTpd%2fZC8yizpZMoKJf%2b2mMJoK0%2fU%3d&risl=&pid=ImgRaw&r=0" height=80px width=80px id="galary"/></div>
+				<div id="7" class="pad" onClick="open_calander()"><img class="app" src="https://th.bing.com/th/id/R.03c77e11e4a54a89d85d38c55ed28b1c?rik=08m1biBxc1zGDQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpaomedia%2fsmall-n-flat%2f1024%2fcalendar-icon.png&ehk=psUPT1KNt%2fis72UgirsFnoXwWLiTe8hiR%2fxgwOk8ySs%3d&risl=&pid=ImgRaw&r=0" height=80px width=80px id="calander"/></div>
+				<div id="8" class="pad" onClick="open_gmail()"><img class="app" src="https://iconape.com/wp-content/uploads/1/11/gmail-02.png" height=60px width=100px id="email"/></div>
+				<div id="9" class="pad" onClick="open_music()"><img class="app" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-1.png" height=70px width=70px id="music"/></div>
+				<div id="10" class="pad" onClick="open_camera()"><img class="app" src="https://th.bing.com/th/id/R.d90a006b299492ac099fb038a15c7e55?rik=MbpQJohLOYQCpQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f9i4%2fedX%2f9i4edX7GT.png&ehk=XFTwQUyWNs2AErIJu4V2zfAHUBz12gOgV3IY92SabvE%3d&risl=&pid=ImgRaw&r=0" height=60px width=70px id="camera"/></div>
+				<div id="11" class="pad" onClick="open_files()"><img class="app" src="https://cdn0.iconfinder.com/data/icons/iconico-3/1024/63.png" height=80px width=80px id="files"/></div>
+				<div id="12" class="pad" onClick="open_groceries()"><img class="app" src="https://th.bing.com/th/id/R.64df8003028f0e9b032bea09a41b940f?rik=2LUwng08jIgxkQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_334009.png&ehk=Muc%2b7B9q3g7Xf5ftODWlFOEDiGJ%2fLfohTPmYJhKpduE%3d&risl=&pid=ImgRaw&r=0" height=80px width=80px id="groceries"/></div>
+				<div id="plus" class="pad" onClick="add()"><img class="app" src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-apps_90405.png" height=60px width=60px id="img2"/></div>
+			</div>
+			<div class="panel1" id="temp2">
+				  <input type="range" min="-2" max="38" value="0" class="slider" id="myRange">
+				  <h2>Freezer:<h2 id="freeze"></h2></h2>
+			</div>
 		</div>
 		<div id="p2">
 			<img id="p2img" src="https://cdn.techjourney.net/2015/04/screenshot-folder.png" width=1500 height=900/>
@@ -332,9 +470,24 @@
 			<img id="p12img" src="https://i0.wp.com/www.webrazzi.com/wp-content/uploads/2012/03/google-play-store-screenshot.jpg" width=1500 height=900/>
 			<input type="button" name="" id="gp_back" value="BACK" onClick="open_gp()" />
 		</div>
+		<div id="p13">
+			<input type="text" value="" id="new_item" maxlength="30" placeholder="Add Note... " />
+			<input type="button" id="Add_Notes" value="Add" onClick="addToList()" />
+			<ul id="grocery_list">
+				<li>Muffin</li>
+				<li>Blueberries</li>
+			</ul>
+			<input type="button" name="" id="groceries_back" value="BACK" onClick="open_groceries()" />
+		</div>
+		<div id="padd">
+			<img id="paddimg" src="https://media.idownloadblog.com/wp-content/uploads/2022/02/Screenshot-app-Mac.jpg" width=1500 height=900/>
+			<input type="button" name="" id="back" value="BACK" onClick="add()" />
+		</div>
 	<footer>
 		<hr id="foot" />
-		<small>&copy Elijah D - 10/22/23</small>
+		<small>&copy Elijah D - 11/05/23</small>
+		<input type="button" value="Off" id="onoff" onclick="onoff();" class="inline">
+		<input type="button" value="12Hr" id="format" onclick="TimeFormat();" class="inline">
 	</footer>
 	<script>
 		//vairbles
@@ -376,45 +529,156 @@
 		yt_back = document.getElementById("yt_back");
 		p12 = document.getElementById("p12");
 		gp_back = document.getElementById("gp_back");
+		p13 = document.getElementById("p13");
+		groceries_back = document.getElementById("groceries_back");
+		padd = document.getElementById("padd");
+		back = document.getElementById("back");
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("freeze");
+		var slider1 = document.getElementById("myRange1");
+		var output1 = document.getElementById("fridge");
+		temp1 = document.getElementById("temp1");
+		temp2 = document.getElementById("temp2");
+		format = document.getElementById("format");
+		grocery_list = document.getElementById("grocery_list");
 		
 		
-		//date calls
+		//24 hr date calls
 		const d = new Date();
 		let day = d.getDay();
-		let tiempo = d.getHours() +":"+ d.getMinutes();
+			//if the hour is less than ten pad w/ zero
+		if(d.getHours() <= 10){
+			hour = "0"+d.getHours();
+		}else{
+			hour = d.getHours();
+		}
+			//if the minute is less that ten pad w/ zero
+		if(d.getMinutes() <= 9){
+			minute = "0"+d.getMinutes();
+		}else{
+			minute = d.getMinutes();
+		}
+			//add the hour and minute together
+		let tiempo1 = hour +":"+ minute;
 		
-		//functions - statments
-		switch(day){
-		case 1:
-			time.innerHTML = "Monday" + "  " + tiempo;
-		break;
-		case 2:
-			time.innerHTML = "Tuesday" + "  " + tiempo;
-		break;
-		case 3:
-			time.innerHTML = "Wednesday" + "  " + tiempo;
-		break;
-		case 4:
-			time.innerHTML = "Thurdsay" + "  " + tiempo;
-		break;
-		case 5:
-			time.innerHTML = "Friday" + "  " + tiempo;
-		break;
-		case 6:
-			time.innerHTML = "Saturday" + "  " + tiempo;
-		break;
-		case 0:
-			time.innerHTML = "Sunday" + "  " + tiempo;
-		break;
-		default:
-			time.innerHTML = "Error";
+		//12 hr date calls
+		switch(d.getHours()){
+			case 13:
+				tiempo = "01" +":"+ minute;
+				break;
+			case 14:
+				tiempo = "02" +":"+ minute;
+				break;
+			case 15:
+				tiempo = "03" +":"+ minute;
+				break;
+			case 16:
+				tiempo = "04" +":"+ minute;
+				break;
+			case 17:
+				tiempo = "05" +":"+ minute;
+				break;
+			case 18:
+				tiempo = "06" +":"+ minute;
+				break;
+			case 19:
+				tiempo = "07" +":"+ minute;
+				break;
+			case 20:
+				tiempo = "08" +":"+ minute;
+				break;
+			case 21:
+				tiempo = "09" +":"+ minute;
+				break;
+			case 22:
+				tiempo = "10" +":"+ minute;
+				break;
+			case 23:
+				tiempo = "11" +":"+ minute;
+				break;
+			case 24:
+				tiempo = "12" +":"+ minute;
+				break;
 		}
 		
+		output.innerHTML = slider.value; // Display the default slider value
+		output1.innerHTML = slider1.value; // Display the default slider value
+		
+		//functions - statments
+		function TimeFormat(){
+			if(format.value == "12Hr"){
+				switch(day){
+					case 1:
+						time.innerHTML = "Monday" + "  " + tiempo;
+					break;
+					case 2:
+						time.innerHTML = "Tuesday" + "  " + tiempo;
+					break;
+					case 3:
+						time.innerHTML = "Wednesday" + "  " + tiempo;
+					break;
+					case 4:
+						time.innerHTML = "Thurdsay" + "  " + tiempo;
+					break;
+					case 5:
+						time.innerHTML = "Friday" + "  " + tiempo;
+					break;
+					case 6:
+						time.innerHTML = "Saturday" + "  " + tiempo;
+					break;
+					case 0:
+						time.innerHTML = "Sunday" + "  " + tiempo;
+					break;
+					default:
+						time.innerHTML = "Error";
+				}
+				format.value = "24Hr";
+			}else if(format.value == "24Hr"){
+				format.value = "12Hr";
+				switch(day){
+					case 1:
+						time.innerHTML = "Monday" + "  " + tiempo1;
+					break;
+					case 2:
+						time.innerHTML = "Tuesday" + "  " + tiempo1;
+					break;
+					case 3:
+						time.innerHTML = "Wednesday" + "  " + tiempo1;
+					break;
+					case 4:
+						time.innerHTML = "Thurdsay" + "  " + tiempo1;
+					break;
+					case 5:
+						time.innerHTML = "Friday" + "  " + tiempo1;
+					break;
+					case 6:
+						time.innerHTML = "Saturday" + "  " + tiempo1;
+					break;
+					case 0:
+						time.innerHTML = "Sunday" + "  " + tiempo1;
+					break;
+					default:
+						time.innerHTML = "Error";
+				}
+			}
+		}
+		TimeFormat();
+		
 		function add(){
-			plus.addEventListener('click', () => {
-				const div = document.createElement("div");
-				panel.appendChild(div);
-			})
+			var p = document.getElementById("p");
+			if (p.style.display === "none") {
+				p.style.display = "block";
+				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
+				padd.style.display = "none";
+			} else {
+				p.style.display = "none";
+				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
+				padd.style.display = "block";
+			}
 		}
 		
 		function open_files() {
@@ -422,10 +686,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p2.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p2.style.display = "block";
 			}
 		}
@@ -434,10 +702,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p3.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p3.style.display = "block";
 			}
 		}
@@ -446,10 +718,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p4.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p4.style.display = "block";
 			}
 		}
@@ -458,10 +734,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p5.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p5.style.display = "block";
 			}
 		}
@@ -470,10 +750,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p6.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p6.style.display = "block";
 			}
 		}
@@ -482,10 +766,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p7.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p7.style.display = "block";
 			}
 		}
@@ -494,10 +782,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p8.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p8.style.display = "block";
 			}
 		}
@@ -506,10 +798,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p9.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p9.style.display = "block";
 			}
 		}
@@ -518,10 +814,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p10.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p10.style.display = "block";
 			}
 		}
@@ -530,10 +830,14 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p11.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p11.style.display = "block";
 			}
 		}
@@ -542,12 +846,76 @@
 			if (p.style.display === "none") {
 				p.style.display = "block";
 				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
 				p12.style.display = "none";
 			} else {
 				p.style.display = "none";
 				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
 				p12.style.display = "block";
 			}
+		}
+		function open_groceries() {
+			var p = document.getElementById("p");
+			if (p.style.display === "none") {
+				p.style.display = "block";
+				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
+				p13.style.display = "none";
+			} else {
+				p.style.display = "none";
+				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
+				p13.style.display = "block";
+				p13.style.float = "none";
+				p13.style.margin = "auto";
+				p13.style.width = "auto";
+				p13.style.background = "none";
+				p13.style.fontSize = "20px";
+				document.getElementById("groceries_back").style.width = "auto";
+				document.getElementById("Add_Notes").style.width = "auto";
+			}
+		}
+
+		slider.oninput = function() {
+			output.innerHTML = this.value;
+		}
+		slider1.oninput = function() {
+			output1.innerHTML = this.value;
+		}
+		
+		function onoff () {
+			currentvalue = document.getElementById ('onoff').value;
+			if (currentvalue == "Off") {
+				document.getElementById ("onoff").value="On";
+				p.style.display = "none";
+				p1.style.display = "none";
+				temp1.style.display = "none";
+				temp2.style.display = "none";
+				document.body.style.background = "black";
+				document.body.style.color = "white";
+				time.style.color = "white";
+			}else {
+				document.getElementById ("onoff").value="Off";
+				p.style.display = "block";
+				p1.style.display = "block";
+				temp1.style.display = "block";
+				temp2.style.display = "block";
+				document.body.style.background = "rgba(173,216,230)";
+				document.body.style.color = "black";
+				time.style.color = "black";
+			}
+		}
+		
+		function addToList(){
+			new_item = document.getElementById("new_item").value;
+			var li = document.createElement("li");
+			t = document.createTextNode(new_item);
+			li.appendChild(t);
 		}
 	</script>
 	</body>
