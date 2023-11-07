@@ -599,6 +599,8 @@
 			case 24:
 				tiempo = "12" +":"+ minute;
 				break;
+			default:
+				tiempo = hour +":"+ minute;
 		}
 		
 		output.innerHTML = slider.value; // Display the default slider value
