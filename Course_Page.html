@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<title>FoxBooks</title>
+		<link rel="stylesheet" type="text/css" href="Foxbooks.css" />
+	</head>
+	<body>
+		<h1>FoxBooks</h1>
+		<div id="course_selection">
+			<h2 id="test">Find Your Textbooks:</h2>
+			<p>Enter the CRN:</p>
+			<select name="" id="">
+			<optgroup label="">
+					<option value="" selected="selected"></option>
+			</optgroup>
+			</select>
+			<p>Enter the Section:</p>
+			<select name="" id="">
+			<optgroup label="">
+					<option value="" selected="selected"></option>
+			</optgroup>
+			</select>
+		</div>
+		<script>
+			fetch("https://github.com/Davise7823/SD330/blob/main/foxbooks.json",{method: "GET"}).then((response) => {
+				console.log('resolved', response);
+				console.log(response.json());
+				return response.json();
+			}).then(data => {
+				console.log(data);
+			}).catch((err) => {
+				console.log('rejected', err);
+			})
+		</script>
+		<footer>
+			<hr />
+			<small>&copy Elijah D - 09/25/23</small>
+		</footer>
+	</body>
+</html>

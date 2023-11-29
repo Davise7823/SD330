@@ -1,0 +1,155 @@
+/*Overall design*/
+body{
+	background-color:rgb(0,0,0,.8);
+	background-image:url("https://th.bing.com/th/id/R.b5481f9c8d5452ba3f119836ad1ebc08?rik=Y3G3qa4YaPVKKQ&pid=ImgRaw&r=0");
+	background-repeat:no-repeat;
+	background-position:50% 0%;
+	color:#e61938;
+}
+/*Header design*/
+h1{
+	text-align:center;
+	font-size:40px;
+}
+/*Sideways dropdown menu*/
+div{
+	margin:auto;
+	margin-left:30px;
+	display:table;
+}
+a{
+	background-color:black;
+	color:white;
+	padding-bottom:10px;
+	padding-top:10px;
+	display:table;
+	width:100px;
+	text-align:center;
+}
+a:hover{
+	color:rgb(255,255,255,.5);
+	text-decoration:none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+/*Set the dropdowns to display nothing*/
+	#AUDD{
+		display:none;
+	}
+	#BDD{
+		display:none;
+	}
+	#MDD{
+		display:none;
+	}
+	#SDD{
+		display:none;
+	}	
+	#TBDD{
+		display:none;
+	}
+	#GBDD{
+		display:none;
+	}
+	#EBDD{
+		display:none;
+	}	
+	#ADD{
+		display:none;
+	}
+	#GiDD{
+		display:none;
+	}
+	#SuDD{
+		display:none;
+	}
+/*The first items will appear marist red*/
+	.firstLevel{
+		background-color:#e61938;
+	}
+/*The second items will appear marist red*/
+	.secondLevel{
+		background-color:#434345;
+	}
+/*The first level items will reveal the other menus on hover*/
+		#AU:hover #AUDD{
+			display:table;
+		} 
+		#B:hover #BDD{
+			display:table;
+		}
+	/*The second level under books will reveal the rest of the items on hover*/
+			#TB:hover #TBDD{
+				display:table;
+			}
+			#GB:hover #GBDD{
+				display:table;
+			}
+			#EB:hover #EBDD{
+				display:table;
+			}
+		#M:hover #MDD{
+			display:table;
+		}
+	/*The second Level under merchandise will reveal the rest of the items on hover*/
+			#A:hover #ADD{
+				display:table;
+			}
+			#Gi:hover #GiDD{
+				display:table;
+			}
+			#Su:hover #SuDD{
+				display:table;
+			}
+		#S:hover #SDD{
+			display:table;
+		}
+ /*H2 design*/
+ h2{
+	 
+ }
+ 
+/*Design of Footer and elements inside*/
+footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	background-color:rgb(0,0,0,.3);
+	padding-top:-20px;
+}
+
+
+
+
+/*----------------------------*/
+/*Error Screen Styles*/
+/*----------------------------*/
+
+/*H1 design for the ErrorScreen*/
+#err{
+	font-size:80px;
+}
+
+/*H2 design for the ErroScreen*/
+#msg{
+	color:white;
+	font-family:"Courier New";
+	position:absolute;
+	top:40%;
+}
+
+
+
+
+/*----------------------------*/
+/*Course_Page Styles*/
+/*----------------------------*/
+
+/*course_selection div*/
+#course_selection{
+	left:50px;
+}
