@@ -10,13 +10,13 @@
 		<div id="course_selection">
 			<h2 id="test">Find Your Textbooks:</h2>
 			<p>Enter the CRN:</p>
-			<select name="" id="">
+			<select name="" id="CRN">
 			<optgroup label="">
 					<option value="" selected="selected"></option>
 			</optgroup>
 			</select>
 			<p>Enter the Section:</p>
-			<select name="" id="">
+			<select name="" id="Section">
 			<optgroup label="">
 					<option value="" selected="selected"></option>
 			</optgroup>
@@ -28,6 +28,10 @@
 				return response.json();
 			}).then(data => {
 				console.log(data.courses);
+				var x = document.getElementById("CRN");
+				var option = document.createElement("option");
+				option.text = data.courses.Environmental_Ethics.CRN;
+				x.add(option);
 			}).catch((err) => {
 				console.log('rejected', err);
 			})
