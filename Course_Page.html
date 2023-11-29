@@ -21,8 +21,11 @@
 					<option value="" selected="selected"></option>
 			</optgroup>
 			</select>
+			<input type="submit" value="" />
+			<h2 id="Course_Info"></h2>
 		</div>
 		<script>
+			courseInfo = document.getElementById("Course_Info");
 			fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
 				console.log('resolved', response);
 				return response.json();
@@ -44,6 +47,36 @@
 			}).catch((err) => {
 				console.log('rejected', err);
 			})
+
+			switch(document.getElementById("CRN").value){
+				case data.courses[0].Section:
+					courseInfo.innerHTML = data.courses[0].Name;
+					break;
+				case data.courses[1].Section:
+					courseInfo.innerHTML = data.courses[1].Name;
+					break;
+				case data.courses[2].Section:
+					courseInfo.innerHTML = data.courses[2].Name;
+					break;
+				case data.courses[3].Section:
+					courseInfo.innerHTML = data.courses[3].Name;
+					break;
+				case data.courses[4].Section:
+					courseInfo.innerHTML = data.courses[4].Name;
+					break;
+				case data.courses[5].Section:
+					courseInfo.innerHTML = data.courses[5].Name;
+					break;
+				case data.courses[6].Section:
+					courseInfo.innerHTML = data.courses[6].Name;
+					break;
+				case data.courses[7].Section:
+					courseInfo.innerHTML = data.courses[7].Name;
+					break;
+				default:
+					tiempo = hour +":"+ minute;
+			}
+			
 		</script>
 		<footer>
 			<hr />
