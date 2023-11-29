@@ -27,11 +27,11 @@
 				console.log('resolved', response);
 				return response.json();
 			}).then(data => {
-				console.log(data.courses);
+				console.log(data.courses [3].CRN);
 				for (let i = 0; i < data.courses.length; i++){
 					var x = document.getElementById("CRN");
 					var option = document.createElement("option");
-					option.text = data.courses[i].CRN;
+					option.text = data.courses [i].CRN;
 					x.add(option);
 				}
 			}).catch((err) => {
