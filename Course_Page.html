@@ -43,42 +43,41 @@
 					var option = document.createElement("option");
 					option.text = data.courses[i].Section;
 					x.add(option);
-				}
-
-				function Submit(){
-					selectCRN = document.getElementById("CRN").value;
-					selectSection = document.getElementById("Section").value;
-					switch(selectCRN){
-						case 12054:
-							document.getElementById("Course_Info").innerHTML = data.courses[0].Name;
-						break;
-						case 10016:
-							document.getElementById("Course_Info").innerHTML = data.courses[1].Name;
-						break;
-						case 11011:
-							document.getElementById("Course_Info").innerHTML = data.courses[2].Name;
-						break;
-						case 11338:
-							document.getElementById("Course_Info").innerHTML = data.courses[3].Name;
-						break;
-						case 12005:
-							document.getElementById("Course_Info").innerHTML = data.courses[4].Name;
-						break;
-						case 12017:
-							document.getElementById("Course_Info").innerHTML = data.courses[5].Name;
-						break;
-						case 11452:
-							document.getElementById("Course_Info").innerHTML = data.courses[6].Name;
-						break;
-						case 12904:
-							document.getElementById("Course_Info").innerHTML = data.courses[7].Name;
-						break;
-					}
-				}
-				
+				}	
 			}).catch((err) => {
 				console.log('rejected', err);
 			})
+
+			function Submit(){
+				selectCRN = document.getElementById("CRN").value;
+				selectSection = document.getElementById("Section").value;
+				switch(selectCRN){
+					case 12054:
+						document.getElementById("Course_Info").innerHTML = data.courses[0].Name;
+					break;
+					case 10016:
+						document.getElementById("Course_Info").innerHTML = data.courses[1].Name;
+					break;
+					case 11011:
+						document.getElementById("Course_Info").innerHTML = data.courses[2].Name;
+					break;
+					case 11338:
+						document.getElementById("Course_Info").innerHTML = data.courses[3].Name;
+					break;
+					case 12005:
+						document.getElementById("Course_Info").innerHTML = data.courses[4].Name;
+					break;
+					case 12017:
+						document.getElementById("Course_Info").innerHTML = data.courses[5].Name;
+					break;
+					case 11452:
+						document.getElementById("Course_Info").innerHTML = data.courses[6].Name;
+					break;
+					case 12904:
+						document.getElementById("Course_Info").innerHTML = data.courses[7].Name;
+					break;
+				}
+			}
 			
 		</script>
 		<footer>
