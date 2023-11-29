@@ -31,7 +31,14 @@
 				for (let i = 0; i < data.courses.length; i++){
 					var x = document.getElementById("CRN");
 					var option = document.createElement("option");
-					option.text = data.courses [i].CRN;
+					option.text = data.courses[i].CRN;
+					x.add(option);
+				}
+				console.log(data.courses[3].Section);
+				for (let i = 0; i < data.courses.length; i++){
+					var x = document.getElementById("Section");
+					var option = document.createElement("option");
+					option.text = data.courses[i].Section;
 					x.add(option);
 				}
 			}).catch((err) => {
