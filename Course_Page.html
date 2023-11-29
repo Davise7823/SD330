@@ -28,10 +28,12 @@
 				return response.json();
 			}).then(data => {
 				console.log(data.courses);
-				var x = document.getElementById("CRN");
-				var option = document.createElement("option");
-				option.text = data.courses.Environmental_Ethics.CRN;
-				x.add(option);
+				for (let i = 0; i < data.courses.length; i++){
+					var x = document.getElementById("CRN");
+					var option = document.createElement("option");
+					option.text = data.courses[i].CRN;
+					x.add(option);
+				}
 			}).catch((err) => {
 				console.log('rejected', err);
 			})
