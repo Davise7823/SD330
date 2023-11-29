@@ -1,251 +1,251 @@
 {
-	"courses":{
-		"Environmental Ethics":{
-			"CRN" : "12054",
-			"Section" : "301L",
-			"School/Major" : "Liberal Arts",
-			"Books":{
-				"Book1":{
-					"Name" : "Environmental Ethics | Readings in Theory and Application",
-					"ISBN" : "978-1285197241",
-					"Author(s)":{
-						"Name1" : "Louius P. Pojman",
-						"Name2" : "Paul Pojman",
-						"Name3" : "Katie McShane"
-					}
-					"Year" : "2016",
-					"Edition" : "7"
+	"courses": {
+		"Environmental_Ethics": {
+			"CRN": "12054",
+			"Section": "301L",
+			"School/Major": "Liberal Arts",
+			"Books": {
+				"Book1": {
+					"Name": "Environmental Ethics | Readings in Theory and Application",
+					"ISBN": "978-1285197241",
+					"Author(s)": {
+						"Name1": "Louius P. Pojman",
+						"Name2": "Paul Pojman",
+						"Name3": "Katie McShane"
+					},
+					"Year": "2016",
+					"Edition": "7"
+				},
+				"Book2": {
+					"Name": "Environmental Ethics | The Big Questions",
+					"ISBN": "978-1405176385",
+					"Author(s)": {
+						"Name1": "David R. Keller"
+					},
+					"Year": "2010",
+					"Edition": "1"
 				}
-				"Book2":{
-					"Name" : "Environmental Ethics | The Big Questions",
-					"ISBN" : "978-1405176385",
-					"Author(s)":{
-						"Name1" : "David R. Keller"
-					}
-					"Year" : "2010",
-					"Edition" : "1"
+			},
+			"Professor(s)": {
+				"Name": "Theresa Morris"
+			},
+			"Credits": "3"
+		},
+		"West Art History": {
+			"CRN": "10016",
+			"Section": "160L",
+			"School/Major": "Communication & the Arts",
+			"Books": {
+				"Book1": {
+					"Name": "Art History",
+					"ISBN": "978-0205873470",
+					"Author(s)": {
+						"Name1": "Marylin Stokstand",
+						"Name2": "Micheal W. Cothren"
+					},
+					"Year": "2014",
+					"Edition": "5"
+				},
+				"Book2": {
+					"Name": "Art History | A view of the West",
+					"ISBN": "978-0131566101",
+					"Author(s)": {
+						"Name1": "Marylin Stokstand",
+						"Name2": "Micheal W. Cothren",
+						"Name3": "Micheal Watt Cothren"
+					},
+					"Year": "2008",
+					"Edition": "1"
 				}
-			}
-			"Professor(s)":{
-				"Name" : "Theresa Morris",
-			}
-			"Credits" : "3"
-		}
-		"West Art History":{
-			"CRN" : "10016",
-			"Section" : "160L",
-			"School/Major" : "Communication & the Arts",
-			"Books":{
-				"Book1":{
-					"Name" : "Art History",
-					"ISBN" : "978-0205873470",
-					"Author(s)":{
-						"Name1" : "Marylin Stokstand",
-						"Name2" : "Micheal W. Cothren"
-					}
-					"Year" : "2014",
-					"Edition" : "5"
+			},
+			"Professor(s)": {
+				"Name": "Amy Fredrickson"
+			},
+			"Credits": "3"
+		},
+		"System Design": {
+			"CRN": "11011",
+			"Section": "330L",
+			"School/Major": "Computer Science & Mathematics",
+			"Books": {
+				"Book1": {
+					"Name": "System Design | Beyond Human-Computer Interaction",
+					"ISBN": "978-1119901099",
+					"Author(s)": {
+						"Name1": "Yvonne Rogers",
+						"Name2": "Jennifer Preece"
+					},
+					"Year": "2023",
+					"Edition": "6"
+				},
+				"Book2": {
+					"Name": "Software Engineering | Modern Approaches",
+					"ISBN": "978-1478632306",
+					"Author(s)": {
+						"Name1": "Eric J. Braude ",
+						"Name2": "Michael E. Bernstein"
+					},
+					"Year": "2016",
+					"Edition": "2"
 				}
-				"Book2":{
-					"Name" : "Art History | A view of the West",
-					"ISBN" : "978-0131566101",
-					"Author(s)":{
-						"Name1" : "Marylin Stokstand",
-						"Name2" : "Micheal W. Cothren",
-						"Name3" : "Micheal Watt Cothren"
-					}
-					"Year" : "2008",
-					"Edition" : "1"
+			},
+			"Professor(s)": {
+				"Name": "Andrew Tokash"
+			},
+			"Credits": "4"
+		},
+		"Organization & Archhitecture": {
+			"CRN": "11338",
+			"Section": "422N",
+			"School/Major": "Computer Science & Mathematics",
+			"Books": {
+				"Book1": {
+					"Name": "Essentials of Computer & Archhitecture",
+					"ISBN": "978-1284123036",
+					"Author(s)": {
+						"Name1": "Linda Null",
+						"Name2": "Julia Lobur"
+					},
+					"Year": "2018",
+					"Edition": "5"
+				},
+				"Book2": {
+					"Name": "Computer Fundamentals | Architechure and Organization",
+					"ISBN": "978-8122436105",
+					"Author(s)": {
+						"Name1": "B. Ram"
+					},
+					"Year": "2018",
+					"Edition": "5"
 				}
-			}
-			"Professor(s)":{
-				"Name" : "Amy Fredrickson",
-			}
-			"Credits" : "3"
-		}
-		"System Design":{
-			"CRN" : "11011",
-			"Section" : "330L",
-			"School/Major" : "Computer Science & Mathematics",
-			"Books":{
-				"Book1":{
-					"Name" : "System Design | Beyond Human-Computer Interaction",
-					"ISBN" : "978-1119901099",
-					"Author(s)":{
-						"Name1" : "Yvonne Rogers",
-						"Name2" : "Jennifer Preece"
-					}
-					"Year" : "2023",
-					"Edition" : "6"
+			},
+			"Professor(s)": {
+				"Name": "Brian Gormanly"
+			},
+			"Credits": "4"
+		},
+		"Theory of Program Languages": {
+			"CRN": "12005",
+			"Section": "331L",
+			"School/Major": "Computer Science & Mathematics",
+			"Books": {
+				"Book1": {
+					"Name": "Program Evaluation Theory & Practice | A Comprehensive Guide",
+					"ISBN": "978-1462532759",
+					"Author(s)": {
+						"Name1": "Donna M. Mertens",
+						"Name2": "Amy T. Wilson"
+					},
+					"Year": "2018",
+					"Edition": "2"
+				},
+				"Book2": {
+					"Name": "Programming Languages | Theory and Practice",
+					"ISBN": "978-1647253714",
+					"Author(s)": {
+						"Name1": "Katy Spalding"
+					},
+					"Year": "2005",
+					"Edition": "2"
 				}
-				"Book2":{
-					"Name" : "Software Engineering | Modern Approaches",
-					"ISBN" : "978-1478632306",
-					"Author(s)":{
-						"Name1" : "Eric J. Braude ",
-						"Name2" : "Michael E. Bernstein"
-					}
-					"Year" : "2016",
-					"Edition" : "2"
+			},
+			"Professor(s)": {
+				"Name": "Alan Labouseur"
+			},
+			"Credits": "4"
+		},
+		"Design of Compilers": {
+			"CRN": "12017",
+			"Section": "432N",
+			"School/Major": "Computer Science & Mathematics",
+			"Books": {
+				"Book1": {
+					"Name": "Compilers | Principles, Techniques & Tools",
+					"ISBN": "978-8131721018",
+					"Author(s)": {
+						"Name1": "Alfred V. Aho",
+						"Name2": "Monica S. Lam",
+						"Name3": "Ravi Sethi",
+						"Name4": "Jeffrey D. Ullman"
+					},
+					"Year": "2012",
+					"Edition": "1"
+				},
+				"Book2": {
+					"Name": "Compilers Design Principles, Techniques & Tools",
+					"ISBN": "978-1635496772",
+					"Author(s)": {
+						"Name1": "Terence Halsey"
+					},
+					"Year": "2018",
+					"Edition": "1"
 				}
-			}
-			"Professor(s)":{
-				"Name" : "Andrew Tokash",
-			}
-			"Credits" : "4"
-		}
-		"Organization & Archhitecture":{
-			"CRN" : "11338",
-			"Section" : "422N",
-			"School/Major" : "Computer Science & Mathematics",
-			"Books":{
-				"Book1":{
-					"Name" : "Essentials of Computer & Archhitecture",
-					"ISBN" : "978-1284123036",
-					"Author(s)":{
-						"Name1" : "Linda Null",
-						"Name2" : "Julia Lobur"
-					}
-					"Year" : "2018",
-					"Edition" : "5"
+			},
+			"Professor(s)": {
+				"Name": "Alan Labouseur"
+			},
+			"Credits": "4"
+		},
+		"Algorithm Analysis + Design": {
+			"CRN": "11452",
+			"Section": "435L",
+			"School/Major": "Computer Science & Mathematics",
+			"Books": {
+				"Book1": {
+					"Name": "Introduction to Algorithms",
+					"ISBN": "978-0262046305",
+					"Author(s)": {
+						"Name1": "Thomas H. Cormen",
+						"Name2": "Charles E. Leiserson",
+						"Name3": "Ronald L. Rivest",
+						"Name4": "Clifford Stein"
+					},
+					"Year": "2022",
+					"Edition": "4"
+				},
+				"Book2": {
+					"Name": "The Algorithm Design Manual",
+					"ISBN": "978-3030542559",
+					"Author(s)": {
+						"Name1": "Steven S. Skiena"
+					},
+					"Year": "2020",
+					"Edition": "3"
 				}
-				"Book2":{
-					"Name" : "Computer Fundamentals | Architechure and Organization",
-					"ISBN" : "978-8122436105",
-					"Author(s)":{
-						"Name1" : "B. Ram"
-					}
-					"Year" : "2018",
-					"Edition" : "5"
+			},
+			"Professor(s)": {
+				"Name": "Zhang Bowu"
+			},
+			"Credits": "3"
+		},
+		"Psyc Res Meth I": {
+			"CRN": "12904",
+			"Section": "350L",
+			"School/Major": "Management",
+			"Books": {
+				"Book1": {
+					"Name": "Psychology for Beginners | Introduction to the Basics of Psychology",
+					"ISBN": "978-3967160154",
+					"Author(s)": {
+						"Name1": "Victor Langbehn"
+					},
+					"Year": "2019",
+					"Edition": "3"
+				},
+				"Book2": {
+					"Name": "Influence | The Psycology of Persuasion",
+					"ISBN": "978-0063138803",
+					"Author(s)": {
+						"Name1": "Robert B. Cialdini"
+					},
+					"Year": "2021",
+					"Edition": "1"
 				}
-			}
-			"Professor(s)":{
-				"Name" : "Brian Gormanly",
-			}
-			"Credits" : "4"
-		}
-		"Theory of Program Languages":{
-			"CRN" : "12005",
-			"Section" : "331L",
-			"School/Major" : "Computer Science & Mathematics",
-			"Books":{
-				"Book1":{
-					"Name" : "Program Evaluation Theory & Practice | A Comprehensive Guide",
-					"ISBN" : "978-1462532759",
-					"Author(s)":{
-						"Name1" : "Donna M. Mertens",
-						"Name2" : "Amy T. Wilson"
-					}
-					"Year" : "2018",
-					"Edition" : "2"
-				}
-				"Book2":{
-					"Name" : "Programming Languages | Theory and Practice",
-					"ISBN" : "978-1647253714",
-					"Author(s)":{
-						"Name1" : "Katy Spalding"
-					}
-					"Year" : "2005",
-					"Edition" : "2"
-				}
-			}
-			"Professor(s)":{
-				"Name" : "Alan Labouseur",
-			}
-			"Credits" : "4"
-		}
-		"Design of Compilers":{
-			"CRN" : "12017",
-			"Section" : "432N",
-			"School/Major" : "Computer Science & Mathematics",
-			"Books":{
-				"Book1":{
-					"Name" : "Compilers | Principles, Techniques & Tools",
-					"ISBN" : "978-8131721018",
-					"Author(s)":{
-						"Name1" : "Alfred V. Aho",
-						"Name2" : "Monica S. Lam",
-						"Name3" : "Ravi Sethi",
-						"Name4" : "Jeffrey D. Ullman"
-					}
-					"Year" : "2012",
-					"Edition" : "1"
-				}
-				"Book2":{
-					"Name" : "Compilers Design Principles, Techniques & Tools",
-					"ISBN" : "978-1635496772",
-					"Author(s)":{
-						"Name1" : "Terence Halsey"
-					}
-					"Year" : "2018",
-					"Edition" : "1"
-				}
-			}
-			"Professor(s)":{
-				"Name" : "Alan Labouseur",
-			}
-			"Credits" : "4"
-		}
-		"Algorithm Analysis + Design":{
-			"CRN" : "11452",
-			"Section" : "435L",
-			"School/Major" : "Computer Science & Mathematics",
-			"Books":{
-				"Book1":{
-					"Name" : "Introduction to Algorithms",
-					"ISBN" : "978-0262046305",
-					"Author(s)":{
-						"Name1" : "Thomas H. Cormen",
-						"Name2" : "Charles E. Leiserson",
-						"Name3" : "Ronald L. Rivest",
-						"Name3" : "Clifford Stein"
-					}
-					"Year" : "2022",
-					"Edition" : "4"
-				}
-				"Book2":{
-					"Name" : "The Algorithm Design Manual",
-					"ISBN" : "978-3030542559",
-					"Author(s)":{
-						"Name1" : "Steven S. Skiena"
-					}
-					"Year" : "2020",
-					"Edition" : "3"
-				}
-			}
-			"Professor(s)":{
-				"Name" : "Zhang Bowu",
-			}
-			"Credits" : "3"
-		}
-		"Psyc Res Meth I":{
-			"CRN" : "12904",
-			"Section" : "350L",
-			"School/Major" : "Management",
-			"Books":{
-				"Book1":{
-					"Name" : "Psychology for Beginners | Introduction to the Basics of Psychology",
-					"ISBN" : "978-3967160154",
-					"Author(s)":{
-						"Name1" : "Victor Langbehn"
-					}
-					"Year" : "2019",
-					"Edition" : "3"
-				}
-				"Book2":{
-					"Name" : "Influence | The Psycology of Persuasion",
-					"ISBN" : "978-0063138803",
-					"Author(s)":{
-						"Name1" : "Robert B. Cialdini"
-					}
-					"Year" : "2021",
-					"Edition" : "1"
-				}
-			}
-			"Professor(s)":{
-				"Name" : "Emma Kelty-Stephen",
-			}
-			"Credits" : "4"
+			},
+			"Professor(s)": {
+				"Name": "Emma Kelty-Stephen"
+			},
+			"Credits": "4"
 		}
 	}
 }
