@@ -1,6 +1,7 @@
 {
-	"courses": {
-		"Environmental_Ethics": {
+	"courses": [
+		{
+			"Name" : "Environmental_Ethics",
 			"CRN": "12054",
 			"Section": "301L",
 			"School/Major": "Liberal Arts",
@@ -31,7 +32,8 @@
 			},
 			"Credits": "3"
 		},
-		"West Art History": {
+		{
+			"Name" : "West Art History",
 			"CRN": "10016",
 			"Section": "160L",
 			"School/Major": "Communication & the Arts",
@@ -63,7 +65,8 @@
 			},
 			"Credits": "3"
 		},
-		"System Design": {
+		{
+			"Name" : "System Design",
 			"CRN": "11011",
 			"Section": "330L",
 			"School/Major": "Computer Science & Mathematics",
@@ -94,7 +97,8 @@
 			},
 			"Credits": "4"
 		},
-		"Organization & Archhitecture": {
+		{
+			"Name" : "Organization & Archhitecture",
 			"CRN": "11338",
 			"Section": "422N",
 			"School/Major": "Computer Science & Mathematics",
@@ -124,7 +128,8 @@
 			},
 			"Credits": "4"
 		},
-		"Theory of Program Languages": {
+		{
+			"Name" : "Theory of Program Languages",
 			"CRN": "12005",
 			"Section": "331L",
 			"School/Major": "Computer Science & Mathematics",
@@ -154,7 +159,8 @@
 			},
 			"Credits": "4"
 		},
-		"Design of Compilers": {
+		{
+			"Name" : "Design of Compilers",
 			"CRN": "12017",
 			"Section": "432N",
 			"School/Major": "Computer Science & Mathematics",
@@ -186,7 +192,8 @@
 			},
 			"Credits": "4"
 		},
-		"Algorithm Analysis + Design": {
+		{
+			"Name" : "Algorithm Analysis + Design",
 			"CRN": "11452",
 			"Section": "435L",
 			"School/Major": "Computer Science & Mathematics",
@@ -218,7 +225,8 @@
 			},
 			"Credits": "3"
 		},
-		"Psyc Res Meth I": {
+		{
+			"Name" : "Psyc Res Meth I",
 			"CRN": "12904",
 			"Section": "350L",
 			"School/Major": "Management",
@@ -247,5 +255,5 @@
 			},
 			"Credits": "4"
 		}
-	}
+	]
 }
