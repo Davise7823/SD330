@@ -53,35 +53,25 @@
 					
 					//If one is selected display it in the course info element
 					button.addEventListener("click", () => {
-						switch(selectCRN){
-							case data.courses[0].CRN:
-								courseInfo.innerHTML = data.courses[0].Name;
-								break;
-							case data.courses[1].CRN:
-								courseInfo.innerHTML = data.courses[1].Name;
-								break;
-							default:
-								break;
-						}
-						/*if(selectCRN = data.courses[0].CRN){
+						if(selectCRN == data.courses[0].CRN){
 							courseInfo.innerHTML = data.courses[0].Name;
-						}else if(selectCRN = data.courses[1].CRN){
+						}else if(selectCRN == data.courses[1].CRN){
 							courseInfo.innerHTML = data.courses[1].Name;
-						}else if(selectCRN = 11011){
+						}else if(selectCRN == data.courses[2].CRN){
 							courseInfo.innerHTML = data.courses[2].Name;
-						}else if(selectCRN = 11338){
+						}else if(selectCRN == data.courses[3].CRN){
 							courseInfo.innerHTML = data.courses[3].Name;
-						}else if(selectCRN = 12005){
+						}else if(selectCRN == data.courses[4].CRN){
 							courseInfo.innerHTML = data.courses[4].Name;
-						}else if(selectCRN = 12017){
+						}else if(selectCRN == data.courses[5].CRN){
 							courseInfo.innerHTML = data.courses[5].Name;
-						}else if(selectCRN = 11452){
+						}else if(selectCRN == data.courses[6].CRN){
 							courseInfo.innerHTML = data.courses[6].Name;
-						}else if(selectCRN = 12904){
+						}else if(selectCRN == data.courses[7].CRN){
 							courseInfo.innerHTML = data.courses[7].Name;
 						}else{
 							courseInfo.innerHTML = "";
-						}*/
+						}
 					});
 				}
 				//run this code to show any errors
