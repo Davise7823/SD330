@@ -28,6 +28,7 @@
 			selectCRN = document.getElementById("CRN").value;
 			selectSection = document.getElementById("Section").value;
 			courseInfo = document.getElementById("Course_Info");
+			var info;
 
 			async function getData(){
 				let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
@@ -52,15 +53,17 @@
 					option.text = data.courses[i].Section;
 					x.add(option);
 				}
-				return data;
+				info = data;
 			}
 
 			getData();
 
+			courseInfo.innerHTML = info;
+
 			function CRNSelection(){
 				switch(selectCRN){
 					case 12054:
-						courseInfo.innerHTML = "hello";
+						courseInfo.innerHTML = info;
 					break;
 					case 10016:
 						courseInfo.innerHTML = data.courses[1].Name;
