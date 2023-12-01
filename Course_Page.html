@@ -39,6 +39,20 @@
 					console.error(error); // handle any errors
 			  	}*/
 
+				for (let i = 0; i < data.courses.length; i++){
+					var x = document.getElementById("CRN");
+					var option = document.createElement("option");
+					option.text = data.courses[i].CRN;
+					x.add(option);
+				}
+				//console.log(data.courses[3].Section);
+				for (let i = 0; i < data.courses.length; i++){
+					var x = document.getElementById("Section");
+					var option = document.createElement("option");
+					option.text = data.courses[i].Section;
+					x.add(option);
+				}
+
 				switch(selectCRN){
 					case 12054:
 						document.getElementById("Course_Info").innerHTML = data.courses[0].Name;
