@@ -35,57 +35,57 @@
 				try{
 					let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
 					let data = await response.json(); // parse the response as JSON
+
+					//populates the "CRN" selection list
+					for (let i = 0; i < data.courses.length; i++){
+						var x = document.getElementById("CRN");
+						var option = document.createElement("option");
+						option.text = data.courses[i].CRN;
+						x.add(option);
+					}
+					
+					//populates the "Section" selection list
+					for (let i = 0; i < data.courses.length; i++){
+						var x = document.getElementById("Section");
+						var option = document.createElement("option");
+						option.text = data.courses[i].Section;
+						x.add(option);
+					}
+					
+					//If one is selected display it in the course info element
+					switch(selectCRN){
+						case 12054:
+							courseInfo.innerHTML = data.courses[0].Name;
+						break;
+						case 10016:
+							courseInfo.innerHTML = data.courses[1].Name;
+						break;
+						case 11011:
+							courseInfo.innerHTML = data.courses[2].Name;
+						break;
+						case 11338:
+							courseInfo.innerHTML = data.courses[3].Name;
+						break;
+						case 12005:
+							courseInfo.innerHTML = data.courses[4].Name;
+						break;
+						case 12017:
+							courseInfo.innerHTML = data.courses[5].Name;
+						break;
+						case 11452:
+							courseInfo.innerHTML = data.courses[6].Name;
+						break;
+						case 12904:
+							courseInfo.innerHTML = data.courses[7].Name;
+						break;
+						default:
+							courseInfo.innerHTML = "";
+					}
 				}
 				//run this code to show what the error was
 				catch (error) {
 					console.error(error); // handle any errors
 			  	}
-				
-				//populates the "CRN" selection list
-				for (let i = 0; i < data.courses.length; i++){
-					var x = document.getElementById("CRN");
-					var option = document.createElement("option");
-					option.text = data.courses[i].CRN;
-					x.add(option);
-				}
-				
-				//populates the "Section" selection list
-				for (let i = 0; i < data.courses.length; i++){
-					var x = document.getElementById("Section");
-					var option = document.createElement("option");
-					option.text = data.courses[i].Section;
-					x.add(option);
-				}
-				
-				//If one is selected display it in the course info element
-				switch(selectCRN){
-					case 12054:
-						courseInfo.innerHTML = data.courses[0].Name;
-					break;
-					case 10016:
-						courseInfo.innerHTML = data.courses[1].Name;
-					break;
-					case 11011:
-						courseInfo.innerHTML = data.courses[2].Name;
-					break;
-					case 11338:
-						courseInfo.innerHTML = data.courses[3].Name;
-					break;
-					case 12005:
-						courseInfo.innerHTML = data.courses[4].Name;
-					break;
-					case 12017:
-						courseInfo.innerHTML = data.courses[5].Name;
-					break;
-					case 11452:
-						courseInfo.innerHTML = data.courses[6].Name;
-					break;
-					case 12904:
-						courseInfo.innerHTML = data.courses[7].Name;
-					break;
-					default:
-						courseInfo.innerHTML = "";
-				}
 			}
 			getData();
 			
