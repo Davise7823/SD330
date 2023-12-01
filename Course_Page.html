@@ -21,7 +21,7 @@
 					<option value="" selected="selected"></option>
 			</optgroup>
 			</select>
-			<input type="submit" value="Submit" onClick="getData()" />
+			<input type="submit" value="Submit" onClick="CRNSelection()" />
 		</div>
 		<h2 id="Course_Info"></h2>
 		<script>
@@ -52,6 +52,12 @@
 					option.text = data.courses[i].Section;
 					x.add(option);
 				}
+				return data;
+			}
+
+			getData();
+
+			function CRNSelection(){
 				switch(selectCRN){
 					case 12054:
 						courseInfo.innerHTML = data.courses[0].Name;
@@ -81,8 +87,6 @@
 						courseInfo.innerHTML = "";
 				}
 			}
-
-			getData();
 			
 			/*fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
 				//console.log('resolved', response);
