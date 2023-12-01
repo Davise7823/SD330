@@ -32,7 +32,7 @@
 			async function getData(){
 				let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
 				let data = await response.json(); // parse the response as JSON
-				console.log(data); // do something with the JSON data
+				//console.log(data); // do something with the JSON data
 				//return data;
 				
 				/*catch (error) {
@@ -51,6 +51,10 @@
 					var option = document.createElement("option");
 					option.text = data.courses[i].Section;
 					x.add(option);
+				}
+
+				if(selectCRN = 12054){
+					document.getElementById("Course_Info").innerHTML = data.courses[0].Name;
 				}
 
 				switch(selectCRN){
