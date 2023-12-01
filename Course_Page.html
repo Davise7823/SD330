@@ -11,13 +11,15 @@
 			<h2>Find Your Textbooks:</h2>
 			<p>Enter the CRN:</p>
 			<select name="" id="CRN">
+				<optgroup label="">
 					<option value=""></option>
+				</optgroup>
 			</select>
 			<p>Enter the Section:</p>
 			<select name="" id="Section">
-			<optgroup label="">
+				<optgroup label="">
 					<option value="" selected="selected"></option>
-			</optgroup>
+				</optgroup>
 			</select>
 			<input type="submit" value="Submit" id="btn"/>
 		</div>
@@ -55,7 +57,7 @@
 					button.addEventListener("click", () => {
 						if(selectCRN == data.courses[0].CRN){
 							courseInfo.innerHTML = data.courses[0].Name;
-						}else if(selectCRN == data.courses[1].CRN){
+						}else if(selectCRN == 10016){
 							courseInfo.innerHTML = data.courses[1].Name;
 						}else if(selectCRN = data.courses[2].CRN){
 							courseInfo.innerHTML = data.courses[2].Name;
