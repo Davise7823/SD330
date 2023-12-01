@@ -55,6 +55,9 @@
 					
 					//If one is selected display it in the course info element
 					button.addEventListener("click", () => {
+						if(selectCRN){
+							courseInfo.innerHTML = data.courses[0].Name;
+						}
 						switch(selectCRN){
 							case 12054:
 								courseInfo.innerHTML = data.courses[0].Name;
@@ -85,7 +88,7 @@
 						}
 					});
 				}
-				//run this code to show what the error was
+				//run this code to show any errors
 				catch (error) {
 					console.error(error); // handle any errors
 			  	}
