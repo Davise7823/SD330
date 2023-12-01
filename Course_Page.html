@@ -53,12 +53,12 @@
 					option.text = data.courses[i].Section;
 					x.add(option);
 				}
-				info = data;
+				return data;
 			}
-
+			
 			getData();
 
-			courseInfo.innerHTML = info;
+			courseInfo.innerHTML = getData();
 
 			function CRNSelection(){
 				switch(selectCRN){
