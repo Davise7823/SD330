@@ -21,14 +21,15 @@
 					<option value="" selected="selected"></option>
 			</optgroup>
 			</select>
-			<input type="submit" value="Submit"/>
+			<input type="submit" value="Submit" id="btn"/>
 		</div>
 		<h2 id="Course_Info"></h2>
 		<script>
 			selectCRN = document.getElementById("CRN").value;
 			selectSection = document.getElementById("Section").value;
 			courseInfo = document.getElementById("Course_Info");
-			var info;
+			button = document.getElementById("btn");
+			
 
 			async function getData(){
 				//try this code, if it doesn't work...
@@ -55,7 +56,9 @@
 					//If one is selected display it in the course info element
 					switch(selectCRN){
 						case 12054:
-							courseInfo.innerHTML = data.courses[0].Name;
+							button.addEventListener("click", () => {
+								courseInfo.innerHTML = data.courses[0].Name;
+							});
 						break;
 						case 10016:
 							courseInfo.innerHTML = data.courses[1].Name;
