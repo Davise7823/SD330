@@ -155,5 +155,6 @@ footer{
 }
 
 #Course_Info{
-	text-align:center;
+	width:auto;
+	margin:50%;
 }
