@@ -21,7 +21,7 @@
 					<option value="" selected="selected"></option>
 			</optgroup>
 			</select>
-			<input type="submit" value="Submit" onClick="CRNSelection();" />
+			<input type="submit" value="Submit"/>
 		</div>
 		<h2 id="Course_Info"></h2>
 		<script>
@@ -31,39 +31,36 @@
 			var info;
 
 			async function getData(){
-				let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
-				let data = await response.json(); // parse the response as JSON
-				//console.log(data); // do something with the JSON data
-				//return data;
-				
-				/*catch (error) {
+				//try this code, if it doesn't work...
+				try{
+					let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
+					let data = await response.json(); // parse the response as JSON
+				}
+				//run this code to show what the error was
+				catch (error) {
 					console.error(error); // handle any errors
-			  	}*/
-
+			  	}
+				
+				//populates the "CRN" selection list
 				for (let i = 0; i < data.courses.length; i++){
 					var x = document.getElementById("CRN");
 					var option = document.createElement("option");
 					option.text = data.courses[i].CRN;
 					x.add(option);
 				}
-				//console.log(data.courses[3].Section);
+				
+				//populates the "Section" selection list
 				for (let i = 0; i < data.courses.length; i++){
 					var x = document.getElementById("Section");
 					var option = document.createElement("option");
 					option.text = data.courses[i].Section;
 					x.add(option);
 				}
-				return data.stringify();
-			}
-			
-			getData();
-
-			courseInfo.innerHTML = getData();
-
-			function CRNSelection(){
+				
+				//If one is selected display it in the course info element
 				switch(selectCRN){
 					case 12054:
-						courseInfo.innerHTML = info;
+						courseInfo.innerHTML = data.courses[0].Name;
 					break;
 					case 10016:
 						courseInfo.innerHTML = data.courses[1].Name;
@@ -90,6 +87,7 @@
 						courseInfo.innerHTML = "";
 				}
 			}
+			getData();
 			
 			/*fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
 				//console.log('resolved', response);
