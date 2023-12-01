@@ -26,34 +26,39 @@
 		</div>
 		<script>
 			courseInfo = document.getElementById("Course_Info");
-			fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
-				console.log('resolved', response);
-				return response.json();
-			}).then(data => {
-				console.log(data.courses[3].CRN);
-				for (let i = 0; i < data.courses.length; i++){
-					var x = document.getElementById("CRN");
-					var option = document.createElement("option");
-					option.text = data.courses[i].CRN;
-					x.add(option);
-				}
-				console.log(data.courses[3].Section);
-				for (let i = 0; i < data.courses.length; i++){
-					var x = document.getElementById("Section");
-					var option = document.createElement("option");
-					option.text = data.courses[i].Section;
-					x.add(option);
-				}
-			}).catch((err) => {
-				console.log('rejected', err);
-			})
+			function getData(){
+				return fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
+					console.log('resolved', response);
+					return response.json();
+				}).then(data => {
+					console.log(data.courses[3].CRN);
+					for (let i = 0; i < data.courses.length; i++){
+						var x = document.getElementById("CRN");
+						var option = document.createElement("option");
+						option.text = data.courses[i].CRN;
+						x.add(option);
+					}
+					console.log(data.courses[3].Section);
+					for (let i = 0; i < data.courses.length; i++){
+						var x = document.getElementById("Section");
+						var option = document.createElement("option");
+						option.text = data.courses[i].Section;
+						x.add(option);
+					}
+					return data;
+				}).catch((err) => {
+					console.log('rejected', err);
+				})
+			}
 
+			getData();
+			
 			function Submit(){
 				selectCRN = document.getElementById("CRN").value;
 				selectSection = document.getElementById("Section").value;
 				switch(selectCRN){
 					case 12054:
-						document.getElementById("Course_Info").innerHTML = data.courses[0].Name;
+						document.getElementById("Course_Info").innerHTML = getData().courses[0].Name;
 					break;
 					case 10016:
 						document.getElementById("Course_Info").innerHTML = data.courses[1].Name;
