@@ -27,17 +27,17 @@
 		<script>
 			courseInfo = document.getElementById("Course_Info");
 			fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
-				console.log('resolved', response);
+				//console.log('resolved', response);
 				return response.json();
 			}).then(data => {
-				console.log(data.courses[3].CRN);
+				//console.log(data.courses[3].CRN);
 				for (let i = 0; i < data.courses.length; i++){
 					var x = document.getElementById("CRN");
 					var option = document.createElement("option");
 					option.text = data.courses[i].CRN;
 					x.add(option);
 				}
-				console.log(data.courses[3].Section);
+				//console.log(data.courses[3].Section);
 				for (let i = 0; i < data.courses.length; i++){
 					var x = document.getElementById("Section");
 					var option = document.createElement("option");
