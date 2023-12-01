@@ -29,6 +29,7 @@
 			selectSection = document.getElementById("Section").value;
 			courseInfo = document.getElementById("Course_Info");
 
+			async function getData(){
 				let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
 				let data = await response.json(); // parse the response as JSON
 				//console.log(data); // do something with the JSON data
@@ -51,7 +52,6 @@
 					option.text = data.courses[i].Section;
 					x.add(option);
 				}
-			async function getData(){
 				switch(selectCRN){
 					case 12054:
 						courseInfo.innerHTML = data.courses[0].Name;
