@@ -21,13 +21,14 @@
 					<option value="" selected="selected"></option>
 			</optgroup>
 			</select>
-			<input type="submit" value="Submit" onClick="getData();" />
+			<input type="submit" value="Submit" onClick="getData();" id="btn" />
 		</div>
 		<h2 id="Course_Info"></h2>
 		<script>
 			selectCRN = document.getElementById("CRN").value;
 			selectSection = document.getElementById("Section").value;
 			courseInfo = document.getElementById("Course_Info");
+			button = document.getElementById("btn");
 
 			async function getData(){
 				let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
@@ -82,6 +83,7 @@
 				}
 			}
 
+			button.addEventListener("click", getData());
 			
 			/*fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
 				//console.log('resolved', response);
@@ -105,7 +107,7 @@
 				console.log('rejected', err);
 			})*/
 
-			getData();
+			/*getData();
 			
 			function Submit(){
 				selectCRN = document.getElementById("CRN").value;
@@ -136,7 +138,7 @@
 						document.getElementById("Course_Info").innerHTML = data.courses[7].Name;
 					break;
 				}
-			}
+			}*/
 			
 		</script>
 		<footer>
