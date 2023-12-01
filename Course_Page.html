@@ -26,7 +26,19 @@
 		</div>
 		<script>
 			courseInfo = document.getElementById("Course_Info");
-			fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
+
+			async function getData(){
+				let response = await fetch('https://davise7823.github.io/SD330/foxbooks.json'); // make a request to a JSON endpoint
+				let data = await response.json(); // parse the response as JSON
+				console.log(data); // do something with the JSON data
+				return data;
+				catch (error) {
+					console.error(error); // handle any errors
+			  	}
+			}
+
+			
+			/*fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
 				//console.log('resolved', response);
 				return response.json();
 			}).then(data => {
@@ -46,7 +58,9 @@
 				}
 			}).catch((err) => {
 				console.log('rejected', err);
-			})
+			})*/
+
+			getData();
 			
 			function Submit(){
 				selectCRN = document.getElementById("CRN").value;
