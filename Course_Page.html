@@ -15,18 +15,11 @@
 					<option value=""></option>
 				</optgroup>
 			</select>
-			<p>Enter the Section:</p>
-			<select name="" id="Section">
-				<optgroup label="">
-					<option value="" selected="selected"></option>
-				</optgroup>
-			</select>
 			<input type="submit" value="Submit" id="btn"/>
 		</div>
 		<h1 id="Course_Info"></h1>
 		<script>
 			selectCRN = document.getElementById("CRN").value;
-			selectSection = document.getElementById("Section").value;
 			courseInfo = document.getElementById("Course_Info");
 			button = document.getElementById("btn");
 			
@@ -42,14 +35,6 @@
 						var x = document.getElementById("CRN");
 						var option = document.createElement("option");
 						option.text = data.courses[i].CRN;
-						x.add(option);
-					}
-					
-					//populates the "Section" selection list
-					for (let i = 0; i < data.courses.length; i++){
-						var x = document.getElementById("Section");
-						var option = document.createElement("option");
-						option.text = data.courses[i].Section;
 						x.add(option);
 					}
 					
@@ -71,8 +56,6 @@
 							courseInfo.innerHTML = data.courses[6].Name;
 						}else if(selectCRN == 12904){
 							courseInfo.innerHTML = data.courses[7].Name;
-						}else{
-							courseInfo.innerHTML = "";
 						}
 					});
 				}
