@@ -5,8 +5,8 @@
 			"CRN": "12054",
 			"Section": "301L",
 			"School/Major": "Liberal Arts",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "Environmental Ethics | Readings in Theory and Application",
 					"ISBN": "978-1285197241",
 					"Author(s)": {
@@ -17,7 +17,7 @@
 					"Year": "2016",
 					"Edition": "7"
 				},
-				"Book2": {
+				{
 					"Name": "Environmental Ethics | The Big Questions",
 					"ISBN": "978-1405176385",
 					"Author(s)": {
@@ -26,7 +26,7 @@
 					"Year": "2010",
 					"Edition": "1"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Theresa Morris"
 			},
