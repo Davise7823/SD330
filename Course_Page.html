@@ -20,6 +20,7 @@
 		<h1 id="Course_Info"></h1>
 		<script>
 			selectCRN = document.getElementById("CRN").value;
+			new_selectCRN = Number(selectCRN);
 			courseInfo = document.getElementById("Course_Info");
 			button = document.getElementById("btn");
 			
@@ -40,15 +41,15 @@
 					
 					//If one is selected display it in the course info element
 					button.addEventListener("click", () => {
-						if(Number(selectCRN)) == 12054){
+						if(new_selectCRN) == 12054){
 							courseInfo.innerHTML = data.courses[0].Name;
-						}else if(selectCRN == 10016){
+						}else if(new_selectCRN == 10016){
 							courseInfo.innerHTML = data.courses[1].Name;
 						}else if(selectCRN == 11011){
 							courseInfo.innerHTML = data.courses[2].Name;
 						}else if(selectCRN == 11338){
 							courseInfo.innerHTML = data.courses[3].Name;
-						}else if(selectCRN = 12005){
+						}else if(new_selectCRN = 12005){
 							courseInfo.innerHTML = data.courses[4].Name;
 						}else if(selectCRN == 12017){
 							courseInfo.innerHTML = data.courses[5].Name;
