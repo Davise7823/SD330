@@ -40,7 +40,7 @@
 					
 					//If one is selected display it in the course info element
 					button.addEventListener("click", () => {
-						/*if(selectCRN == 12054){
+						if(Number(selectCRN) == 12054){
 							courseInfo.innerHTML = data.courses[0].Name;
 						}else if(selectCRN == 10016){
 							courseInfo.innerHTML = data.courses[1].Name;
@@ -56,17 +56,6 @@
 							courseInfo.innerHTML = data.courses[6].Name;
 						}else if(selectCRN == 12904){
 							courseInfo.innerHTML = data.courses[7].Name;
-						}*/
-						switch(Number(selectCRN)){
-							case 12054:
-								courseInfo.innerHTML = data.courses[0].Name;
-								break;
-							case 10016:
-								courseInfo.innerHTML = data.courses[1].Name;
-								break;
-							case 11011:
-								courseInfo.innerHTML = data.courses[2].Name;
-								break;
 						}
 					});
 				}
