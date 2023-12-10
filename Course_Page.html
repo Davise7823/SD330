@@ -1,28 +1,27 @@
 <!doctype html>
 <html lang="eng">
-	<head>
-		<meta charset="utf-8">
-		<title>FoxBooks</title>
-		<link rel="stylesheet" type="text/css" href="Foxbooks.css" />
-	</head>
-	<body>
-		<h1>FoxBooks</h1>
-		<div id="course_selection">
-			<h2>Find Your Textbooks:</h2>
-			<p>Enter the CRN:</p>
-			<select name="" id="CRN">
-				<optgroup label="">
-					<option value=""></option>
-				</optgroup>
-			</select>
-			<input type="submit" value="Submit" id="btn"/>
-		</div>
-		<h1 id="Course_Info"></h1>
-		<script>
-			selectCRN = document.getElementById("CRN").value;
+<head>
+    <meta charset="utf-8">
+    <title>FoxBooks</title>
+    <link rel="stylesheet" type="text/css" href="Foxbooks.css" />
+</head>
+<body>
+    <h1>FoxBooks</h1>
+    <div id="course_selection">
+        <h2>Find Your Textbooks:</h2>
+        <p>Enter the CRN:</p>
+        <select name="" id="CRN">
+            <optgroup>
+                <option value=""></option>
+            </optgroup>
+        </select>
+        <input type="submit" value="Submit" id="btn" />
+    </div>
+    <h1 id="Course_Info"></h1>
+    <script>
 			courseInfo = document.getElementById("Course_Info");
 			button = document.getElementById("btn");
-			
+
 
 			async function getData(){
 				//try this code, if it doesn't work...
@@ -37,20 +36,21 @@
 						option.text = data.courses[i].CRN;
 						x.add(option);
 					}
-					
+
 					//If one is selected display it in the course info element
 					button.addEventListener("click", () => {
-						if(selectCRN = 12054){
+						selectCRN = Number(document.getElementById("CRN").value);
+						
+						if(selectCRN == 12054){
 							courseInfo.innerHTML = data.courses[0].Name;
-						}else if(selectCRN == 10016){
+						}else if (selectCRN == 10016) {
 							courseInfo.innerHTML = data.courses[1].Name;
 						}else if(selectCRN == 11011){
 							courseInfo.innerHTML = data.courses[2].Name;
 						}else if(selectCRN == 11338){
 							courseInfo.innerHTML = data.courses[3].Name;
-						}else if(selectCRN = 12005){
+						}else if(selectCRN == 12005){
 							courseInfo.innerHTML = data.courses[4].Name;
-							console.log(selectCRN);
 						}else if(selectCRN == 12017){
 							courseInfo.innerHTML = data.courses[5].Name;
 						}else if(selectCRN == 11452){
@@ -66,32 +66,10 @@
 			  	}
 			}
 			getData();
-			
-			/*fetch("https://davise7823.github.io/SD330/foxbooks.json",{method: "GET"}).then((response) => {
-				//console.log('resolved', response);
-				return response.json();
-			}).then(data => {
-				//console.log(data.courses[3].CRN);
-				for (let i = 0; i < data.courses.length; i++){
-					var x = document.getElementById("CRN");
-					var option = document.createElement("option");
-					option.text = data.courses[i].CRN;
-					x.add(option);
-				}
-				//console.log(data.courses[3].Section);
-				for (let i = 0; i < data.courses.length; i++){
-					var x = document.getElementById("Section");
-					var option = document.createElement("option");
-					option.text = data.courses[i].Section;
-					x.add(option);
-				}
-			}).catch((err) => {
-				console.log('rejected', err);
-			})*/
-		</script>
-		<footer>
-			<hr />
-			<small>&copy Elijah D - 09/25/23</small>
-		</footer>
-	</body>
+    </script>
+    <footer>
+        <hr />
+        <small>&copy Elijah D - 09/25/23</small>
+    </footer>
+</body>
 </html>
