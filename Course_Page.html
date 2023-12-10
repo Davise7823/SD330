@@ -18,9 +18,11 @@
         <input type="submit" value="Submit" id="btn" />
     </div>
     <h1 id="Course_Info"></h1>
+    <h2 id="Book_Info"></h2>
     <script>
 			courseInfo = document.getElementById("Course_Info");
 			button = document.getElementById("btn");
+	    		bookInfo = document.getElementById("Book_Info");
 
 
 			async function getData(){
@@ -43,20 +45,30 @@
 						
 						if(selectCRN == 12054){
 							courseInfo.innerHTML = data.courses[0].Name;
+							bookInfo.innerHTML = data.courses[0].Name;
 						}else if (selectCRN == 10016) {
 							courseInfo.innerHTML = data.courses[1].Name;
+							bookInfo.innerHTML = data.courses[1].Name;
 						}else if(selectCRN == 11011){
 							courseInfo.innerHTML = data.courses[2].Name;
+							bookInfo.innerHTML = data.courses[2].Name;
 						}else if(selectCRN == 11338){
 							courseInfo.innerHTML = data.courses[3].Name;
+							bookInfo.innerHTML = data.courses[3].Name;
 						}else if(selectCRN == 12005){
 							courseInfo.innerHTML = data.courses[4].Name;
+							bookInfo.innerHTML = data.courses[4].Name;
 						}else if(selectCRN == 12017){
 							courseInfo.innerHTML = data.courses[5].Name;
+							bookInfo.innerHTML = data.courses[5].Name;
 						}else if(selectCRN == 11452){
 							courseInfo.innerHTML = data.courses[6].Name;
+							bookInfo.innerHTML = data.courses[6].Name;
 						}else if(selectCRN == 12904){
 							courseInfo.innerHTML = data.courses[7].Name;
+							for(int i = 0; i < data.courses[7].Books.length; i++){
+								bookInfo.innerHTML = data.courses[7].Books[i];
+							}
 						}
 					});
 				}
