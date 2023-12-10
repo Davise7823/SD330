@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>FoxBooks</h1>
-	<p id="bread"><a class="crumbs" href="https://davise7823.github.io/SD330/foxbooks.html">Home</a> > <a class="crumbs" href="https://davise7823.github.io/SD330/Course_Page.html">Home</a></p>
+	<p id="bread"><p id="crumb1">Home</p> > <p id="crumb2">By Course</p></p>
 	<div id="course_selection">
 	        <h2>Find Your Textbooks:</h2>
 	        <p>Enter the CRN:</p>
@@ -110,6 +110,10 @@
 			button = document.getElementById("btn");
 	    		bookInfo1 = document.getElementById("Book_Info1");
 	    		bookInfo2 = document.getElementById("Book_Info2");
+	    		bread = document.getElementById("bread");
+	    		crumb1 = document.getElementById("crumb1");
+	    		crumb2 = document.getElementById("crumb2");
+	    
 
 
 			async function getData(){
@@ -172,6 +176,11 @@
 			  	}
 			}
 			getData();
+	    		function breadcrumb(){
+				cumb1.addEventListener("click", () => {
+					crumb1.href("https://davise7823.github.io/SD330/foxbooks.html");
+				}
+			}
     </script>
     <footer>
         <hr />
