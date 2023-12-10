@@ -40,7 +40,7 @@
 					
 					//If one is selected display it in the course info element
 					button.addEventListener("click", () => {
-						if(selectCRN) = 12054){
+						if(selectCRN === 12054){
 							courseInfo.innerHTML = data.courses[0].Name;
 						}else if(selectCRN == 10016){
 							courseInfo.innerHTML = data.courses[1].Name;
@@ -50,7 +50,6 @@
 							courseInfo.innerHTML = data.courses[3].Name;
 						}else if(selectCRN = 12005){
 							courseInfo.innerHTML = data.courses[4].Name;
-							console.log(new_selectCRN);
 							console.log(selectCRN);
 						}else if(selectCRN == 12017){
 							courseInfo.innerHTML = data.courses[5].Name;
