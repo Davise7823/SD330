@@ -38,10 +38,9 @@ a:visited {
 }
 
 #bread{
-	float:left;
 }
 
-.crumbs{
+a.crumbs{
 	background-color:none;
 	color:black;
 	text-align:center;
