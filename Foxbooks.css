@@ -163,6 +163,7 @@ footer{
 /*course_selection div*/
 #course_selection{
 	float:right;
+	top:20px;
 }
 
 #Course_Info{
