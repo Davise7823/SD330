@@ -37,7 +37,12 @@ a:visited {
   text-decoration: none;
 }
 
+#bread{
+	float:left;
+}
+
 .crumbs{
+	background-color:none;
 	color:black;
 	text-align:center;
 	float:left;
