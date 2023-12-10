@@ -159,7 +159,6 @@ footer{
 #Course_Info{
 	text-align:center;
 	margin-top:200px;
-	z-index:1;
 }
 
 #Book_Info1{
@@ -180,7 +179,4 @@ footer{
 	position:absolute;
 	left:39;
 	top:18;
-}
-
-span{
 }
