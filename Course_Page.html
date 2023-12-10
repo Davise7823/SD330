@@ -66,7 +66,7 @@
 							bookInfo.innerHTML = data.courses[6].Name;
 						}else if(selectCRN == 12904){
 							courseInfo.innerHTML = data.courses[7].Name;
-							for(int i = 0; i < data.courses[7].Books.length; i++){
+							for(var i = 0; i < data.courses[7].Books.length; i++){
 								bookInfo.innerHTML = data.courses[7].Books[i];
 							}
 						}
