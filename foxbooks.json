@@ -37,8 +37,8 @@
 			"CRN": "10016",
 			"Section": "160L",
 			"School/Major": "Communication & the Arts",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "Art History",
 					"ISBN": "978-0205873470",
 					"Author(s)": {
@@ -48,7 +48,7 @@
 					"Year": "2014",
 					"Edition": "5"
 				},
-				"Book2": {
+				{
 					"Name": "Art History | A view of the West",
 					"ISBN": "978-0131566101",
 					"Author(s)": {
@@ -59,7 +59,7 @@
 					"Year": "2008",
 					"Edition": "1"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Amy Fredrickson"
 			},
