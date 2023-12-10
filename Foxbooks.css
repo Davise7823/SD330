@@ -36,26 +36,6 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-
-#bread{
-}
-
-a.crumbs{
-	background-color:none;
-	color:black;
-	text-align:center;
-	float:left;
-}
-.crumbs:hover{
-	color:rgb(255,255,255,.5);
-	text-decoration:none;
-}
-.crumbs:link {
-  text-decoration: none;
-}
-.crumbs:visited {
-  text-decoration: none;
-}
 /*Set the dropdowns to display nothing*/
 	#AUDD{
 		display:none;
