@@ -6,16 +6,6 @@ body{
 	background-position:50% 0%;
 	color:#e61938;
 }
-
-#title{
-	background-color:none;
-	color:#e61938;
-	padding-bottom:none;
-	padding-top:none;
-	display:block;
-	width:none;
-	text-align:center;
-}
 /*Header design*/
 h1{
 	text-align:center;
@@ -161,7 +151,7 @@ footer{
 /*----------------------------*/
 
 /*course_selection div*/
-.course_selection{
+#course_selection{
 	float:right;
 	
 }
