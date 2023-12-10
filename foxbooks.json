@@ -70,8 +70,8 @@
 			"CRN": "11011",
 			"Section": "330L",
 			"School/Major": "Computer Science & Mathematics",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "System Design | Beyond Human-Computer Interaction",
 					"ISBN": "978-1119901099",
 					"Author(s)": {
@@ -81,7 +81,7 @@
 					"Year": "2023",
 					"Edition": "6"
 				},
-				"Book2": {
+				{
 					"Name": "Software Engineering | Modern Approaches",
 					"ISBN": "978-1478632306",
 					"Author(s)": {
@@ -91,7 +91,7 @@
 					"Year": "2016",
 					"Edition": "2"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Andrew Tokash"
 			},
@@ -102,8 +102,8 @@
 			"CRN": "11338",
 			"Section": "422N",
 			"School/Major": "Computer Science & Mathematics",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "Essentials of Computer & Archhitecture",
 					"ISBN": "978-1284123036",
 					"Author(s)": {
@@ -113,7 +113,7 @@
 					"Year": "2018",
 					"Edition": "5"
 				},
-				"Book2": {
+				{
 					"Name": "Computer Fundamentals | Architechure and Organization",
 					"ISBN": "978-8122436105",
 					"Author(s)": {
@@ -122,7 +122,7 @@
 					"Year": "2018",
 					"Edition": "5"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Brian Gormanly"
 			},
@@ -133,8 +133,8 @@
 			"CRN": "12005",
 			"Section": "331L",
 			"School/Major": "Computer Science & Mathematics",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "Program Evaluation Theory & Practice | A Comprehensive Guide",
 					"ISBN": "978-1462532759",
 					"Author(s)": {
@@ -144,7 +144,7 @@
 					"Year": "2018",
 					"Edition": "2"
 				},
-				"Book2": {
+				{
 					"Name": "Programming Languages | Theory and Practice",
 					"ISBN": "978-1647253714",
 					"Author(s)": {
@@ -153,7 +153,7 @@
 					"Year": "2005",
 					"Edition": "2"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Alan Labouseur"
 			},
@@ -164,8 +164,8 @@
 			"CRN": "12017",
 			"Section": "432N",
 			"School/Major": "Computer Science & Mathematics",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "Compilers | Principles, Techniques & Tools",
 					"ISBN": "978-8131721018",
 					"Author(s)": {
@@ -177,7 +177,7 @@
 					"Year": "2012",
 					"Edition": "1"
 				},
-				"Book2": {
+				{
 					"Name": "Compilers Design Principles, Techniques & Tools",
 					"ISBN": "978-1635496772",
 					"Author(s)": {
@@ -186,7 +186,7 @@
 					"Year": "2018",
 					"Edition": "1"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Alan Labouseur"
 			},
@@ -197,8 +197,8 @@
 			"CRN": "11452",
 			"Section": "435L",
 			"School/Major": "Computer Science & Mathematics",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "Introduction to Algorithms",
 					"ISBN": "978-0262046305",
 					"Author(s)": {
@@ -210,7 +210,7 @@
 					"Year": "2022",
 					"Edition": "4"
 				},
-				"Book2": {
+				{
 					"Name": "The Algorithm Design Manual",
 					"ISBN": "978-3030542559",
 					"Author(s)": {
@@ -219,7 +219,7 @@
 					"Year": "2020",
 					"Edition": "3"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Zhang Bowu"
 			},
@@ -230,8 +230,8 @@
 			"CRN": "12904",
 			"Section": "350L",
 			"School/Major": "Management",
-			"Books": {
-				"Book1": {
+			"Books": [
+				{
 					"Name": "Psychology for Beginners | Introduction to the Basics of Psychology",
 					"ISBN": "978-3967160154",
 					"Author(s)": {
@@ -240,7 +240,7 @@
 					"Year": "2019",
 					"Edition": "3"
 				},
-				"Book2": {
+				{
 					"Name": "Influence | The Psycology of Persuasion",
 					"ISBN": "978-0063138803",
 					"Author(s)": {
@@ -249,7 +249,7 @@
 					"Year": "2021",
 					"Edition": "1"
 				}
-			},
+			],
 			"Professor(s)": {
 				"Name": "Emma Kelty-Stephen"
 			},
