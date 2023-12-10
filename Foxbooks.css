@@ -38,13 +38,9 @@ a:visited {
 }
 
 .crumbs{
-	background-color:black;
 	color:black;
-	padding-bottom:10px;
-	padding-top:10px;
-	display:table;
-	width:100px;
 	text-align:center;
+	float:left;
 }
 .crumbs:hover{
 	color:rgb(255,255,255,.5);
