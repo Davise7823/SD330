@@ -152,7 +152,7 @@ footer{
 
 /*course_selection div*/
 #course_selection{
-	left:50px;
+	float:right;
 }
 
 #Course_Info{
