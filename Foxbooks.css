@@ -160,7 +160,12 @@ footer{
 	margin-top:280px;
 }
 
-#Book_Info{
+#Book_Info1{
+	text-align:center;
+	margin-bottom:200px;
+}
+
+#Book_Info2{
 	text-align:center;
 	margin-bottom:200px;
 }
