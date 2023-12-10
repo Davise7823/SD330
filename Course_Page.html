@@ -18,11 +18,13 @@
         <input type="submit" value="Submit" id="btn" />
     </div>
     <h1 id="Course_Info"></h1>
-    <h2 id="Book_Info"></h2>
+    <h2 id="Book_Info1"></h2>
+    <h2 id="Book_Info2"></h2>
     <script>
 			courseInfo = document.getElementById("Course_Info");
 			button = document.getElementById("btn");
-	    		bookInfo = document.getElementById("Book_Info");
+	    		bookInfo1 = document.getElementById("Book_Info1");
+	    		bookInfo2 = document.getElementById("Book_Info2");
 
 
 			async function getData(){
@@ -45,37 +47,37 @@
 						
 						if(selectCRN == 12054){
 							courseInfo.innerHTML = data.courses[0].Name;
-							bookInfo.innerHTML = data.courses[0].Books[0].Name;
-							bookInfo.innerHTML = data.courses[0].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[0].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[0].Books[1].Name;
 						}else if (selectCRN == 10016) {
 							courseInfo.innerHTML = data.courses[1].Name;
-							bookInfo.innerHTML = data.courses[1].Books[0].Name;
-							bookInfo.innerHTML = data.courses[1].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[1].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[1].Books[1].Name;
 							console.log(data.courses[1].Books[0].Name);
 						}else if(selectCRN == 11011){
 							courseInfo.innerHTML = data.courses[2].Name;
-							bookInfo.innerHTML = data.courses[2].Books[0].Name;
-							bookInfo.innerHTML = data.courses[2].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[2].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[2].Books[1].Name;
 						}else if(selectCRN == 11338){
 							courseInfo.innerHTML = data.courses[3].Name;
-							bookInfo.innerHTML = data.courses[3].Books[0].Name;
-							bookInfo.innerHTML = data.courses[3].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[3].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[3].Books[1].Name;
 						}else if(selectCRN == 12005){
 							courseInfo.innerHTML = data.courses[4].Name;
-							bookInfo.innerHTML = data.courses[4].Books[0].Name;
-							bookInfo.innerHTML = data.courses[4].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[4].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[4].Books[1].Name;
 						}else if(selectCRN == 12017){
 							courseInfo.innerHTML = data.courses[5].Name;
-							bookInfo.innerHTML = data.courses[5].Books[0].Name;
-							bookInfo.innerHTML = data.courses[5].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[5].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[5].Books[1].Name;
 						}else if(selectCRN == 11452){
 							courseInfo.innerHTML = data.courses[6].Name;
-							bookInfo.innerHTML = data.courses[6].Books[0].Name;
-							bookInfo.innerHTML = data.courses[6].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[6].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[6].Books[1].Name;
 						}else if(selectCRN == 12904){
 							courseInfo.innerHTML = data.courses[7].Name;
-							bookInfo.innerHTML = data.courses[7].Books[0].Name;
-							bookInfo.innerHTML = data.courses[7].Books[1].Name;
+							bookInfo1.innerHTML = data.courses[7].Books[0].Name;
+							bookInfo2.innerHTML = data.courses[7].Books[1].Name;
 						}
 					});
 				}
